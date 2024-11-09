@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+figure {
+  text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    color: navy; 
+}
+
+header {
+    width: auto;
+    margin: 1rem auto;
+    background-color: navy;
+    border: solid 1px;
+    border-color: blue;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin-bottom: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Mobile View ***************/
+#menu {
+	display:block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: white;
+    position: absolute;
+	top: 3rem;
+	right: 1rem;
+    background-color: navy;
+}
+
+#menu::before {
+	content: "≡";
+    color: white;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 30px;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: blue;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+#menu {
+    border: none;
+    color: transparent;
+    
+}
+
+.main {
+    width:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+    background-color: white;
+    margin: auto;    
+    color: navy;
+    
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    color: navy;    
+}
+img {
+    display: block;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+}
+footer {
+    width: auto;
+    margin: 1rem auto;
+    background-color: navy;
+    border: solid 1px;
+    border-color: blue;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+   
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section {
+    margin: 1rem auto; 
+    max-width: 960px;
+}
+
+figure {
+    display:inline-block;
+    border: 5px solid darkgray;
+    margin: 5px;
+}
+
+
+/* mobile **************************/
+header {
+	background-color: navy;
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+nav {
+	background-color: #023a5fc0;
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+a:visited{
+    color:brown
+}
+
+.active {
+	color: yellow;
+}
+.main{
+    display:flex;
+    flex-direction: row-reverse;
+    
+}
