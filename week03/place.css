@@ -21,15 +21,5 @@
     color: var(--primary-color);
   }
   
-  /* Media Query for Larger Screens */
-  @media (min-width: 768px) {
-    main {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-    }
   
-    .weather-icon::after {
-      content: "⛅";
-    }
-  }
+  
