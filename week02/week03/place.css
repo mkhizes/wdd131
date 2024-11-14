@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #004f98; /* Sample primary color */
+    --secondary-color: #f4a261;
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header img {
+    width: 100%;
+  }
+  
+  #weather h2 {
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    main {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+  
+    .weather-icon::after {
+      content: "⛅";
+    }
+  }
