@@ -45,7 +45,7 @@ addButton.addEventListener('click', function() {
     // Set focus to the input element
     inputField.focus();
   } else {
-    // If input is blank, provide a message or do nothing and return focus to input
+    
     inputField.focus();
   }
 });
