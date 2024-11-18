@@ -1,5 +1,6 @@
+@media (min-width:500px) {
 :root {
-    --primary-color: #1481e7; /* Sample primary color */
+    --primary-color: #1481e7; 
     --secondary-color: brown;
     --text-color: #333;
   }
@@ -56,6 +57,10 @@
     border: 1px solid #bbb;
     padding: 1.1rem;
     font-size: larger;
+  }
+  
+
+    
   }
   
   
