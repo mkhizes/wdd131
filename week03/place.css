@@ -9,7 +9,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    
+    background-color: aliceblue;
   }
   
   header img {
@@ -46,7 +46,7 @@
   }
   
   footer{
-    background-color: var var(--secondary-color);
+    background-color: brown;
     text-align: center;
     border: 10px;
     color: antiquewhite;
