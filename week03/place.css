@@ -21,6 +21,7 @@
 
   h1{
     text-align: center;
+    width: auto;
   }
   #hero-small{
     justify-items: center;
@@ -46,6 +47,7 @@
     text-align: center;
     background-color:rgb(34, 66, 34);
     color:white;
+    width: auto;
   }
   
   footer{
