@@ -60,9 +60,12 @@
     padding: 1.1rem;
     font-size: larger;
   }
-  
+  footer img{
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
 
-    
+  }
   }
   
   
