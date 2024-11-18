@@ -54,7 +54,7 @@
     background-color: brown;
     text-align: center;
     color: antiquewhite;
-    max-width: auto;
+    max-width: 100%;
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1.1rem;
