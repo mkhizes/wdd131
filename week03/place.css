@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #004f98; /* Sample primary color */
-    --secondary-color: #f4a261;
+    --primary-color: #1481e7; /* Sample primary color */
+    --secondary-color: brown;
     --text-color: #333;
   }
   
@@ -9,6 +9,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    
   }
   
   header img {
@@ -22,14 +23,33 @@
   #hero-small{
     justify-items: center;
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
   #data{
     text-align: center;
+    background-color: #004f98;
+    color: antiquewhite;
+    align-content: center;
+    border: 15px;
   }
   
-  #weather h2 {
+   h2 {
     position: relative;
     display: inline-block;
-    color: var(--primary-color);
+    text-align: center;
+    background-color:rgb(34, 66, 34);
+    color:white;
+  }
+  
+  footer{
+    background-color: brown;
+    text-align: center;
+    border: 10px;
+    color: antiquewhite;
   }
   
   
