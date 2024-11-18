@@ -46,7 +46,7 @@
   }
   
   footer{
-    background-color: brown;
+    background-color: var var(--secondary-color);
     text-align: center;
     border: 10px;
     color: antiquewhite;
