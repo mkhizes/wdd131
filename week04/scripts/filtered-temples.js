@@ -117,6 +117,33 @@ function displayTemples(templeArray) {
       <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
     `;
     templesContainer.appendChild(card);
+    function createTempleCard(filteredTemples) {
+      document.querySelector('#temples').innerHTML = '';
+      filteredTemples.forEach((temple) => {
+          let card = document.createElement('section');
+          const templeName = document.createElement('h2');
+          const location = document.createElement('p');
+          const dedicated = document.createElement('p');
+          const area = document.createElement('p');
+          const imageUrl = document.createElement('img');
+          imageUrl.setAttribute('src', temple.imageUrl);
+          imageUrl.setAttribute('alt', temple.templeName + ' Temple');
+          imageUrl.setAttribute('loading', 'lazy');
+  
+          templeName.textContent = temple.templeName;
+          location.textContent = 'Location: ' + temple.location;
+          dedicated.textContent = 'Dedicated: ' + temple.dedicated;
+          area.textContent = 'Size: ' + temple.area + ' sq ft';
+  
+          card.appendChild(templeName);
+          card.appendChild(location);
+          card.appendChild(dedicated);
+          card.appendChild(area);
+          card.appendChild(imageUrl);
+  
+          templeCards.appendChild(card);
+      });
+  }
   });
 }
 
