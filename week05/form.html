@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sizwe Aquill Xolani Mkhize" >
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals">
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/form.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="/exercise/reviewform.html">
+            <!-- Product Name -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="select a Product" disabled selected>Select a Product ...</option>
+                <option value="flux capacitor">"Flux capacitor"</option>
+                <option value="power laces">Power laces</option>
+                <option value="time circuits">Time circuits</option>
+                <option value="low voltage reactor">Low voltage reactor</option>
+                <option value="warp equalizer">Warp equalizer</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <section>
+                <label for="rating1"><input type="radio" name="rating" id="rating1" value="1" required> ★ </label>
+                <label for="rating2"><input type="radio" name="rating" id="rating2" value="2" > ★★ </label>    
+                <label for="rating3"><input type="radio" name="rating" id="rating3" value="3">★★★</label>   
+                <label for="rating4"><input type="radio" name="rating" id="rating4" value="4">★★★★</label>
+                <label for="rating5"><input type="radio" name="rating" id="rating5" value="5">★★★★★</label>
+                </section>        
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="installDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product (Check all that apply)</legend>
+                <label>
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                    Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                    Perfomance
+                </label>
+                <label>
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                    Design
+                </label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review (optional)</label>
+            <textarea id="review" name="review" style="width: 600px; height:200px"></textarea>
+
+            <!-- User Name -->
+            <label for="username">User Name(optional)</label>
+            <input type="text" id="username" name="username" style="width: 580px; height: 44px;">
+
+            <!-- Submit Button -->
+            <label for="submit">
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sizwe Aquill Xolani Mkhize Republic of South Africa <br>
+            <span id="lastModified"> Last Modified:</span></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

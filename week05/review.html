@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been successfully submitted.</p>
+        <p>Total Reviews Submitted: <span id="reviewCount"></span></p>
+    </main>
+    <footer>
+        <p>>&copy; 2024 Sizwe Aquill Xolani Mkhize Republic of South Africa <br>
+            <span id="lastModified"> Last Modified:</span></p>
+    </footer>
+    <script>
+        // Increment and Display Review Counter
+        const counter = localStorage.getItem('reviewCounter');
+        const updatedCounter = parseInt(counter) + 1;
+        localStorage.setItem('reviewCounter', updatedCounter);
+        document.getElementById('reviewCount').textContent = updatedCounter;
+    </script>
+</body>
+</html>
