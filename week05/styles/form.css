@@ -58,3 +58,6 @@ footer {
     padding: .5rem 2%;
     
 }
+footer img{
+    border-radius: 15px;
+}

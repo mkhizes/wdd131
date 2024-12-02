@@ -51,3 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const yearElement = document.getElementById('copyright');
   yearElement.textContent = `© ${currentYear} - Last Modified: ${lastModifiedDate.toLocaleDateString()}`;
 });
+// Increment and Display Review Counter
+const counter = localStorage.getItem('reviewCounter');
+const updatedCounter = parseInt(counter) + 1;
+localStorage.setItem('reviewCounter', updatedCounter);
+document.getElementById('reviewCount').textContent = updatedCounter;
+
