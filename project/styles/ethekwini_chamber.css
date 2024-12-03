@@ -10,27 +10,54 @@ header {
     background-color: #5f5aa2;
     color: white;
     padding: 1em 0;
+    font-weight: 700;
+    font-size: large;
 }
+.logo{
+    box-sizing: border-box;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+    padding:5rem;
+}
+.opening{
+    text-align: center;
+}
+
 
 .nav {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 auto;
 }
 
 .nav li {
     margin: 0 15px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .nav a {
     color: white;
     text-decoration: none;
+    
 }
 
 main {
     padding: 2em;
+}
+.hero-img{
+    background-image: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items:flex-start;
 }
 
 footer {
@@ -40,8 +67,3 @@ footer {
     padding: 1em 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
