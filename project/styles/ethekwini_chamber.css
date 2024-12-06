@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #babfdb;
-    color: #30292f;
+    color: white;
+    background-color: #30292f;
 }
 
 header {
@@ -11,16 +11,20 @@ header {
     color: white;
     padding: 1em 0;
     font-weight: 700;
-    font-size: large;
+    font-size:larger;
 }
 .logo{
     box-sizing: border-box;
     padding: 1rem;
+    border: #babfdb;
+    background-color:brown;
+    
 }
 h1{
-    text-align: center;
+    text-align:left;
     font-size: x-large;
     padding:5rem;
+    
 }
 .opening{
     text-align: center;
@@ -33,12 +37,14 @@ h1{
     list-style-type: none;
     margin: 0;
     padding: 0 auto;
+    
 }
 
 .nav li {
     margin: 0 15px;
     padding: 15px;
     border-radius: 10px;
+    background-color: #413f34;
 }
 
 .nav a {
@@ -46,12 +52,29 @@ h1{
     text-decoration: none;
     
 }
+.greeting{
+    text-align: center;
+    font-size: x-large;
+    padding: 1rem;
+}
 
 main {
     padding: 2em;
 }
 .hero-img{
     background-image: none;
+    background-color: #413f34;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    column-gap: 2rem;
+}
+.flex-container> div{
+    border-radius: 10px;
+    box-sizing: border-box;  
 }
 form {
     display: flex;
@@ -59,11 +82,145 @@ form {
     gap: 1em;
     align-items:flex-start;
 }
+caption{
+    font-size: larger;
+    align-content: center;
+}
 
 footer {
-    background-color: #413f34;
+    background-color: #5f5aa2;
     color: white;
     text-align: center;
     padding: 1em 0;
+    margin:auto;
+    padding: .5rem 2%;
 }
 
+footer img{
+    border-radius: 15px;
+}
+    
+
+.contact{
+  text-align: center;
+}
+#contactForm{
+  align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form input, form select, form textarea, form text  {
+    width: 580px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-items:  center;
+}
+.container {
+    position: relative;
+  }
+  
+  
+
+ @media screen and (max-width: 900px) 
+{
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+ }
+    
+  #background {
+      display: none;
+  }
+  
+  footer {
+      margin-top: 25px;
+  }
+  
+}
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: 4,1fr;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+.text-card{
+  grid-column:1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height:fit-content;
+  box-sizing:fit-content;
+  box-shadow: 5px 5px 10px;
+  
+}
+.smme-card{
+grid-column:3/4;
+grid-row: 1/2;
+box-sizing:fit-content;
+box-shadow: 5px 5px 10px;
+}
+.events-card{
+grid-column: 5/6;
+grid-row: 1/2;
+box-sizing:fit-content;
+  box-shadow: 5px 5px 10px;
+}
+
+.community-card{
+  grid-column: 7/8;
+  grid-row: 1/2;
+  box-sizing:fit-content;
+  box-shadow: 5px 5px 10px;
+  }
+  
+  .service-card{
+    grid-column: 7/8;
+    grid-row: 3/4;
+    box-sizing:fit-content;
+    box-shadow: 5px 5px 10px;
+
+    }
+    .joiningform{
+      grid-column: 1/2;
+      grid-row: 3/4;
+      box-sizing:fit-content;
+      box-shadow: 5px 5px 10px;
+      row-gap: 10px;
+      }
+
+.operations-card {
+grid-column:5/6;
+grid-row:3/4;
+box-shadow:5px 5px 10px;
+box-sizing: border-box;
+}
+
+.news-card{
+  grid-column:3/4 ;
+  grid-row:3/4 ;
+  box-shadow:5px 5px 10px;
+  box-sizing: border-box;
+}
+.mission,h1{
+  text-align: center;
+}
+          
+iframe{
+    align-items: center;
+    box-shadow:5px 5px 10px;
+    box-sizing: border-box;
+  
+}

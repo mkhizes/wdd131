@@ -13,3 +13,5 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     localStorage.setItem("contactSubmission", JSON.stringify(submission));
     alert("Thank you for contacting us, " + name + "!");
 });
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
