@@ -52,11 +52,7 @@ h1{
     text-decoration: none;
     
 }
-.greeting{
-    text-align: center;
-    font-size: x-large;
-    padding: 1rem;
-}
+
 
 main {
     padding: 2em;
@@ -101,7 +97,6 @@ footer img{
     border-radius: 15px;
 }
     
-
 .contact{
   text-align: center;
 }
