@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/week02/temple.html"
+    "livePreview.defaultPreviewPath": "/week02/temple.html",
+    "liveServer.settings.port": 5501
 }
