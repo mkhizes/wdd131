@@ -11,7 +11,7 @@ const quotes=[
            "Bathande bonke kodwa ungathembi noyedwa, bheka uMdali noMsindisi uJesu Kristu"
      ]
      const usedIndexes=new Set()
-     const quoteElement=document.getElementById("quote")
+     const quoteElement=document.getElementById("quotes")
      
      function generateQuote(){
         if (usedIndexes.size==quotes.length){
